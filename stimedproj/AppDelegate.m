@@ -56,14 +56,13 @@
          withError:(NSError *)error {
         // Perform any operations on signed in user here.
         NSString *userId = user.userID;                  // For client-side use only!
-        NSString *idToken = user.authentication.idToken; // Safe to send to the server
-        NSString *fullName = user.profile.name;
-        NSString *givenName = user.profile.givenName;
-        NSString *familyName = user.profile.familyName;
-        NSString *email = user.profile.email;
+//        NSString *idToken = user.authentication.idToken; // Safe to send to the server
+//        NSString *fullName = user.profile.name;
+//        NSString *givenName = user.profile.givenName;
+//        NSString *familyName = user.profile.familyName;
+//        NSString *email = user.profile.email;
         
-        NSLog(fullName);
-        // ...
+        
     }
     
     - (void)signIn:(GIDSignIn *)signIn
