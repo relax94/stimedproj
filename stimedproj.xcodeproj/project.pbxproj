@@ -15,6 +15,10 @@
 		871054DB1F9CF160006C69D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871054D91F9CF160006C69D9 /* LaunchScreen.storyboard */; };
 		871054DE1F9CF160006C69D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 871054DD1F9CF160006C69D9 /* main.m */; };
 		8787A1C11F9CF39500D12C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1C01F9CF39500D12C40 /* GoogleService-Info.plist */; };
+		8787A1CF1F9D1EA500D12C40 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1CE1F9D1EA500D12C40 /* logo.png */; };
+		8787A1D21F9D206800D12C40 /* ic_gp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D01F9D206800D12C40 /* ic_gp.png */; };
+		8787A1D31F9D206800D12C40 /* ic_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D11F9D206800D12C40 /* ic_fb.png */; };
+		8787A1D51F9D23D200D12C40 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D41F9D23D200D12C40 /* wallpaper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		871054DC1F9CF160006C69D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		871054DD1F9CF160006C69D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8787A1C01F9CF39500D12C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8787A1CE1F9D1EA500D12C40 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8787A1D01F9D206800D12C40 /* ic_gp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_gp.png; sourceTree = "<group>"; };
+		8787A1D11F9D206800D12C40 /* ic_fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fb.png; sourceTree = "<group>"; };
+		8787A1D41F9D23D200D12C40 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 		9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stimedproj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0CCDFFD930F8083DE01A2B /* Pods-stimedproj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stimedproj.release.xcconfig"; path = "Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +92,7 @@
 		871054CD1F9CF160006C69D9 /* stimedproj */ = {
 			isa = PBXGroup;
 			children = (
+				8787A1CC1F9D1E1100D12C40 /* Assets */,
 				871054CE1F9CF160006C69D9 /* AppDelegate.h */,
 				871054CF1F9CF160006C69D9 /* AppDelegate.m */,
 				871054D11F9CF160006C69D9 /* ViewController.h */,
@@ -96,6 +105,25 @@
 				871054DD1F9CF160006C69D9 /* main.m */,
 			);
 			path = stimedproj;
+			sourceTree = "<group>";
+		};
+		8787A1CC1F9D1E1100D12C40 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8787A1CD1F9D1E2800D12C40 /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8787A1CD1F9D1E2800D12C40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8787A1D41F9D23D200D12C40 /* wallpaper.jpg */,
+				8787A1D11F9D206800D12C40 /* ic_fb.png */,
+				8787A1D01F9D206800D12C40 /* ic_gp.png */,
+				8787A1CE1F9D1EA500D12C40 /* logo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				871054DB1F9CF160006C69D9 /* LaunchScreen.storyboard in Resources */,
+				8787A1CF1F9D1EA500D12C40 /* logo.png in Resources */,
+				8787A1D21F9D206800D12C40 /* ic_gp.png in Resources */,
 				8787A1C11F9CF39500D12C40 /* GoogleService-Info.plist in Resources */,
+				8787A1D51F9D23D200D12C40 /* wallpaper.jpg in Resources */,
+				8787A1D31F9D206800D12C40 /* ic_fb.png in Resources */,
 				871054D81F9CF160006C69D9 /* Assets.xcassets in Resources */,
 				871054D61F9CF160006C69D9 /* Main.storyboard in Resources */,
 			);
