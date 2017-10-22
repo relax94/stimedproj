@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [GIDSignIn sharedInstance].clientID = @"1093599866554-g55kvf67d1pk6ubq48au7r1ljis7aobo.apps.googleusercontent.com";
+    [GIDSignIn sharedInstance].uiDelegate = self;
+    
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
 }
 
 

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C1C341942CDFAADA59997BE /* libPods-stimedproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */; };
 		871054D01F9CF160006C69D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 871054CF1F9CF160006C69D9 /* AppDelegate.m */; };
 		871054D31F9CF160006C69D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 871054D21F9CF160006C69D9 /* ViewController.m */; };
 		871054D61F9CF160006C69D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871054D41F9CF160006C69D9 /* Main.storyboard */; };
 		871054D81F9CF160006C69D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871054D71F9CF160006C69D9 /* Assets.xcassets */; };
 		871054DB1F9CF160006C69D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871054D91F9CF160006C69D9 /* LaunchScreen.storyboard */; };
 		871054DE1F9CF160006C69D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 871054DD1F9CF160006C69D9 /* main.m */; };
+		8787A1C11F9CF39500D12C40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1C01F9CF39500D12C40 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41A79E9CBC624FF73E420934 /* Pods-stimedproj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stimedproj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj.debug.xcconfig"; sourceTree = "<group>"; };
 		871054CB1F9CF160006C69D9 /* stimedproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stimedproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		871054CE1F9CF160006C69D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		871054CF1F9CF160006C69D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		871054DA1F9CF160006C69D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		871054DC1F9CF160006C69D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		871054DD1F9CF160006C69D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8787A1C01F9CF39500D12C40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stimedproj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0CCDFFD930F8083DE01A2B /* Pods-stimedproj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stimedproj.release.xcconfig"; path = "Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C1C341942CDFAADA59997BE /* libPods-stimedproj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		167115FCCDEA2C6E4087977D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29420FEEFB51CE501518E676 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41A79E9CBC624FF73E420934 /* Pods-stimedproj.debug.xcconfig */,
+				DC0CCDFFD930F8083DE01A2B /* Pods-stimedproj.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		871054C21F9CF15F006C69D9 = {
 			isa = PBXGroup;
 			children = (
 				871054CD1F9CF160006C69D9 /* stimedproj */,
 				871054CC1F9CF160006C69D9 /* Products */,
+				29420FEEFB51CE501518E676 /* Pods */,
+				167115FCCDEA2C6E4087977D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				871054D71F9CF160006C69D9 /* Assets.xcassets */,
 				871054D91F9CF160006C69D9 /* LaunchScreen.storyboard */,
 				871054DC1F9CF160006C69D9 /* Info.plist */,
+				8787A1C01F9CF39500D12C40 /* GoogleService-Info.plist */,
 				871054DD1F9CF160006C69D9 /* main.m */,
 			);
 			path = stimedproj;
@@ -78,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 871054E11F9CF160006C69D9 /* Build configuration list for PBXNativeTarget "stimedproj" */;
 			buildPhases = (
+				05696DDD0FBEBFC6A1656239 /* [CP] Check Pods Manifest.lock */,
 				871054C71F9CF15F006C69D9 /* Sources */,
 				871054C81F9CF15F006C69D9 /* Frameworks */,
 				871054C91F9CF15F006C69D9 /* Resources */,
+				71B249C8700A4631388FBD9D /* [CP] Embed Pods Frameworks */,
+				B3C5CEF982FD0017BE1A0A23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +160,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				871054DB1F9CF160006C69D9 /* LaunchScreen.storyboard in Resources */,
+				8787A1C11F9CF39500D12C40 /* GoogleService-Info.plist in Resources */,
 				871054D81F9CF160006C69D9 /* Assets.xcassets in Resources */,
 				871054D61F9CF160006C69D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05696DDD0FBEBFC6A1656239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stimedproj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71B249C8700A4631388FBD9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C5CEF982FD0017BE1A0A23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		871054C71F9CF15F006C69D9 /* Sources */ = {
@@ -276,6 +363,7 @@
 		};
 		871054E21F9CF160006C69D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A79E9CBC624FF73E420934 /* Pods-stimedproj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +377,7 @@
 		};
 		871054E31F9CF160006C69D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0CCDFFD930F8083DE01A2B /* Pods-stimedproj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
