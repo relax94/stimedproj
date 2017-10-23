@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKLoginButton.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 
-@interface ViewController : UIViewController<GIDSignInUIDelegate>
-    
-    @property(weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
+@interface ViewController : UIViewController<GIDSignInUIDelegate, FBSDKLoginButtonDelegate>
+
+@property(assign, nonatomic) IBOutlet FBSDKLoginButton *fbSignInButton;
+@property(weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
+
+-(void) googleSignInResultWith: (NSString*)userId;
     
 @end
 
