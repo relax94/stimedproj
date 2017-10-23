@@ -19,6 +19,7 @@
 		8787A1D21F9D206800D12C40 /* ic_gp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D01F9D206800D12C40 /* ic_gp.png */; };
 		8787A1D31F9D206800D12C40 /* ic_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D11F9D206800D12C40 /* ic_fb.png */; };
 		8787A1D51F9D23D200D12C40 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D41F9D23D200D12C40 /* wallpaper.jpg */; };
+		87CD8F2D1F9E321C008F4A33 /* AllEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CD8F2C1F9E321C008F4A33 /* AllEventsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		8787A1D01F9D206800D12C40 /* ic_gp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_gp.png; sourceTree = "<group>"; };
 		8787A1D11F9D206800D12C40 /* ic_fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fb.png; sourceTree = "<group>"; };
 		8787A1D41F9D23D200D12C40 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
+		87CD8F2B1F9E321C008F4A33 /* AllEventsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllEventsTableViewController.h; sourceTree = "<group>"; };
+		87CD8F2C1F9E321C008F4A33 /* AllEventsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllEventsTableViewController.m; sourceTree = "<group>"; };
 		9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stimedproj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0CCDFFD930F8083DE01A2B /* Pods-stimedproj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stimedproj.release.xcconfig"; path = "Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,7 @@
 		871054CD1F9CF160006C69D9 /* stimedproj */ = {
 			isa = PBXGroup;
 			children = (
+				87CD8F291F9E31DC008F4A33 /* EventPages */,
 				8787A1CC1F9D1E1100D12C40 /* Assets */,
 				871054CE1F9CF160006C69D9 /* AppDelegate.h */,
 				871054CF1F9CF160006C69D9 /* AppDelegate.m */,
@@ -124,6 +128,23 @@
 				8787A1CE1F9D1EA500D12C40 /* logo.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		87CD8F291F9E31DC008F4A33 /* EventPages */ = {
+			isa = PBXGroup;
+			children = (
+				87CD8F2A1F9E31FB008F4A33 /* All */,
+			);
+			path = EventPages;
+			sourceTree = "<group>";
+		};
+		87CD8F2A1F9E31FB008F4A33 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				87CD8F2B1F9E321C008F4A33 /* AllEventsTableViewController.h */,
+				87CD8F2C1F9E321C008F4A33 /* AllEventsTableViewController.m */,
+			);
+			path = All;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +284,7 @@
 			files = (
 				871054D31F9CF160006C69D9 /* ViewController.m in Sources */,
 				871054DE1F9CF160006C69D9 /* main.m in Sources */,
+				87CD8F2D1F9E321C008F4A33 /* AllEventsTableViewController.m in Sources */,
 				871054D01F9CF160006C69D9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

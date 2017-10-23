@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHP-7o-zbN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,7 +36,7 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gWP-ls-qKk">
-                                        <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
+                                        <rect key="frame" x="-8" y="-8" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -46,18 +46,20 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dMm-Gi-Ny0"/>
                     <connections>
+                        <outlet property="fbSignInButton" destination="VUI-oo-vXi" id="AJN-aN-d4c"/>
                         <outlet property="signInButton" destination="cEJ-K3-1Wv" id="8DQ-Tf-MZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884" y="28"/>
+            <point key="canvasLocation" x="-1151" y="-502"/>
         </scene>
-        <!--Root View Controller-->
+        <!--All Events-->
         <scene sceneID="9Hk-ET-3VU">
             <objects>
-                <tableViewController id="Sd4-LG-GBv" sceneMemberID="viewController">
+                <tableViewController id="Sd4-LG-GBv" customClass="AllEventsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ep5-XH-B5O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,11 +79,11 @@
                             <outlet property="delegate" destination="Sd4-LG-GBv" id="hVf-TE-a33"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Tzl-o4-oy6"/>
+                    <navigationItem key="navigationItem" title="All Events" id="Tzl-o4-oy6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNc-xk-zPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="29"/>
+            <point key="canvasLocation" x="-1151" y="201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SUQ-4k-ZfF">
@@ -92,12 +94,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Sd4-LG-GBv" kind="relationship" relationship="rootViewController" id="0tF-iP-cpJ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5v9-uV-sdG"/>
+                        <segue destination="Sd4-LG-GBv" kind="show" id="Ivk-3t-Y9M"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC7-FN-Shi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="28"/>
+            <point key="canvasLocation" x="-2330" y="-220"/>
         </scene>
     </scenes>
     <resources>

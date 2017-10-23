@@ -15,6 +15,7 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [GIDSignIn sharedInstance].delegate = self;
@@ -62,7 +63,7 @@
 //        NSString *familyName = user.profile.familyName;
 //        NSString *email = user.profile.email;
         
-        
+        [self.loginViewController googleSignInResultWith:userId];
     }
     
     - (void)signIn:(GIDSignIn *)signIn
@@ -99,6 +100,5 @@ didDisconnectWithUser:(GIDGoogleUser *)user
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end

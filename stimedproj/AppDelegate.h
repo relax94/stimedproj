@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "ViewController.h"
 
+@class ViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate>
 
+@property (weak, nonatomic) ViewController *loginViewController;
 @property (strong, nonatomic) UIWindow *window;
 
 
