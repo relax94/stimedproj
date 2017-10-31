@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C1C341942CDFAADA59997BE /* libPods-stimedproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */; };
+		296BCE98E0C833492B1C021A /* Pods_stimedproj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58C5E8480F5BD847482A0F /* Pods_stimedproj.framework */; };
 		871054D01F9CF160006C69D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 871054CF1F9CF160006C69D9 /* AppDelegate.m */; };
 		871054D31F9CF160006C69D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 871054D21F9CF160006C69D9 /* ViewController.m */; };
 		871054D61F9CF160006C69D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871054D41F9CF160006C69D9 /* Main.storyboard */; };
@@ -19,6 +19,7 @@
 		8787A1D21F9D206800D12C40 /* ic_gp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D01F9D206800D12C40 /* ic_gp.png */; };
 		8787A1D31F9D206800D12C40 /* ic_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D11F9D206800D12C40 /* ic_fb.png */; };
 		8787A1D51F9D23D200D12C40 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8787A1D41F9D23D200D12C40 /* wallpaper.jpg */; };
+		87CD8F311F9E6263008F4A33 /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CD8F301F9E6263008F4A33 /* NetworkLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,10 @@
 		8787A1D01F9D206800D12C40 /* ic_gp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_gp.png; sourceTree = "<group>"; };
 		8787A1D11F9D206800D12C40 /* ic_fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fb.png; sourceTree = "<group>"; };
 		8787A1D41F9D23D200D12C40 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
-		9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stimedproj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CD8F2F1F9E6263008F4A33 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
+		87CD8F301F9E6263008F4A33 /* NetworkLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
 		DC0CCDFFD930F8083DE01A2B /* Pods-stimedproj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stimedproj.release.xcconfig"; path = "Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj.release.xcconfig"; sourceTree = "<group>"; };
+		DD58C5E8480F5BD847482A0F /* Pods_stimedproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stimedproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C1C341942CDFAADA59997BE /* libPods-stimedproj.a in Frameworks */,
+				296BCE98E0C833492B1C021A /* Pods_stimedproj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +60,7 @@
 		167115FCCDEA2C6E4087977D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F6B615C02F4C1D79C0FA984 /* libPods-stimedproj.a */,
+				DD58C5E8480F5BD847482A0F /* Pods_stimedproj.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,6 +95,7 @@
 		871054CD1F9CF160006C69D9 /* stimedproj */ = {
 			isa = PBXGroup;
 			children = (
+				87CD8F2E1F9E6239008F4A33 /* Network */,
 				8787A1CC1F9D1E1100D12C40 /* Assets */,
 				871054CE1F9CF160006C69D9 /* AppDelegate.h */,
 				871054CF1F9CF160006C69D9 /* AppDelegate.m */,
@@ -124,6 +128,15 @@
 				8787A1CE1F9D1EA500D12C40 /* logo.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		87CD8F2E1F9E6239008F4A33 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				87CD8F2F1F9E6263008F4A33 /* NetworkLayer.h */,
+				87CD8F301F9E6263008F4A33 /* NetworkLayer.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +238,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -241,8 +275,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-stimedproj/Pods-stimedproj-resources.sh",
-				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
-				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -261,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CD8F311F9E6263008F4A33 /* NetworkLayer.m in Sources */,
 				871054D31F9CF160006C69D9 /* ViewController.m in Sources */,
 				871054DE1F9CF160006C69D9 /* main.m in Sources */,
 				871054D01F9CF160006C69D9 /* AppDelegate.m in Sources */,

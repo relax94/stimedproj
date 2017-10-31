@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C3B2C088517D3133533E45B367BD39A9'
+               BlueprintIdentifier = 'DD1F15A05F62E2C20BC860F6DA62FC5E'
                BlueprintName = 'FBSDKShareKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libFBSDKShareKit.a'>
+               BuildableName = 'FBSDKShareKit.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

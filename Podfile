@@ -3,7 +3,7 @@
 
 target 'stimedproj' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for stimedproj
   
@@ -11,5 +11,8 @@ target 'stimedproj' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKShareKit'
   pod 'FBSDKLoginKit'
+  pod 'Alamofire', '~> 4.5'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
 
 end

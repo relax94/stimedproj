@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.1)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -31,14 +32,21 @@ PODS:
   - GTMSessionFetcher/Core (1.1.12)
   - GTMSessionFetcher/Full (1.1.12):
     - GTMSessionFetcher/Core (= 1.1.12)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
   - GoogleSignIn
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 03365dad5d790249196ffad8be4f6d8a2d98f932
   FBSDKLoginKit: 66ff53b73cffd967ab773e32fac39e90a60e6d46
@@ -47,7 +55,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: be83fd28d63ae3087e7d351b1f39c1a7e24ab6e7
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
 
-PODFILE CHECKSUM: 66f50221784b222a6cc5180a08af83ccfb923326
+PODFILE CHECKSUM: 23cdcbce23a909824fcfa631d5c433adcb4950be
 
 COCOAPODS: 1.3.1
